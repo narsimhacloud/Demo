@@ -30,6 +30,6 @@ steps:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'drop'
     publishLocation: 'Container'
-- task: SonarQubePublish@6
+- task: SonarQubeAnalyze@6
   inputs:
-    pollingTimeoutSec: '300'
+    jdkversion: 'JAVA_HOME'
